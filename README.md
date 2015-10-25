@@ -2,6 +2,8 @@
 
 Fortuna is the client app for an unnamed javascript skills assessment forum I'm building as well as the Greek goddess of fortune.
 
+![Fortuna Logo in Greek laurel wreath](fortuna.png?raw=true "Greek goddess of fortune")
+
 ### PURPOSE
 
 Personal project built with Angular and Angular Material. This project is a work in progress.
