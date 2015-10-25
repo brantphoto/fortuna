@@ -7,6 +7,7 @@ export class MainController {
     this.classAnimation = '';
     this.creationDate = 1445625485763;
     this.greeting = '';
+    this.commentArray = Array(50);
     this.sayGreeting();
   }
 

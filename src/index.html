@@ -19,18 +19,33 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body>
+  <body layout="row">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div style="height: 100%" layout="column">
-      <md-toolbar class="md-primary">
-        <div class="md-toolbar-tools">
-          <h2 class="md-flex">Hapi Times</h2>
-        </div>
-      </md-toolbar>
-      <md-content flex ui-view layout="column"></md-content>
-    </div>
+  <md-sidenav layout="column" flex class="kmd-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+    <md-content layout="column" flex>
+    <md-button class="md-primary"
+      ng-repeat="button in ['Questions','Topics', 'Contact', 'Bio']">
+    {{button}}
+    </md-button>
+    <md-divider class="md-primary">
+    </md-divider>
+    <md-button class="md-primary"
+      ng-repeat="button in ['Questions','Topics', 'Contact', 'Bio']">
+    {{button}}
+    </md-button>
+
+    </md-content>
+  </md-sidenav>
+  <div style="height: 100%" layout="column" flex>
+    <md-toolbar class="md-primary">
+      <div class="md-toolbar-tools">
+        <h2 class="md-flex">Hapi Times</h2>
+      </div>
+    </md-toolbar>
+    <md-content flex ui-view layout="column"></md-content>
+  </div>
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->

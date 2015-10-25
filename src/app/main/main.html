@@ -1,33 +1,26 @@
-<div flex class="main-background" layout="row">
-  <md-sidenav layout="column" flex class="kmd-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
-    <md-content layout="column" flex>
-    <md-button class="md-primary"
-      ng-repeat="button in ['Questions','Topics', 'Contact', 'Bio']">
-    {{button}}
-    </md-button>
-    <md-divider class="md-primary">
-    </md-divider>
-    <md-button class="md-primary"
-      ng-repeat="button in ['Questions','Topics', 'Contact', 'Bio']">
-    {{button}}
-    </md-button>
-
-    </md-content>
-  </md-sidenav>
-  <md-content flex layout"column" layout-padding>
-  <h1 class="md-display-3">
-    Today's Hottest Questions
-  </h1>
-  <md-card>
-    <md-card-content>
-      <h2>Card headline</h2>
-      <p>Card content</p>
-    </md-card-content>
-    <md-card-footer>
-      Card footer
-    </md-card-footer>
-  </md-card>
+  <md-content flex layout="row" layout-padding>
+    <div layout="column" flex="70">
+      <h1 class="md-display-3" flex>
+        Today's Hottest Questions
+      </h1>
+      <md-content flex="50">
+        <md-toolbar class="md-primary md-whiteframe-2dp">
+          <div class="md-toolbar-tools">
+            <h2 class="md-flex"> What is a javascript?</h2>
+          </div>
+        </md-toolbar>
+        <md-content class="md-whiteframe-2dp" layout-padding>
+          <h2>Card headline</h2>
+          <p>Card content</p>
+          <md-subheader class="md-primary">Yes</md-subheader>
+          <!--<p ng-repeat="comment in main.commentArray track by $index">Card content</p>-->
+          <div class="md-actions" layout="row" layout-align="end center">
+            <md-button class="md-primary">What does yes mean?</md-button>
+            <md-button class="md-warn">What does no mean?</md-button>
+          </div>
+        </md-content>
+      </md-content>
+    </div>
 
   </md-content>
 
-</div>

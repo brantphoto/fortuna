@@ -6,8 +6,8 @@ export function config ($logProvider,
 
   $mdThemingProvider
     .theme('default')
-    .primaryPalette('purple', {
-     'default': '500'
+    .primaryPalette('teal', {
+     'default': '600'
     });
 
 }
