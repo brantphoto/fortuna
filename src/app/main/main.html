@@ -1,5 +1,5 @@
-  <md-content flex layout-padding>
-      <md-content ng-repeat="question in main.commentArray track by $index" class="md-whiteframe-2dp" style="margin: 2em 6em; max-height: 500px">
+  <md-content class="questions-page" flex layout-padding>
+      <md-content ng-repeat="question in main.commentArray track by $index" class="question-card md-whiteframe-2dp">
         <md-toolbar class="md-accent md-whiteframe-2dp">
           <div class="md-toolbar-tools">
             <h2 class="md-flex"> Javascript Equality </h2>
@@ -21,7 +21,7 @@
           <md-list-item ng-repeat="comment in main.commentArray track by $index">
             <img src="assets/images/all-the-things.jpg" class="md-avatar" />
             <div class="md-list-item-text">
-              <h3>
+              <h3 class="md-headline">
                 Ken Haley
               </h3>
               <p class="md-body-1">Card content</p>
@@ -32,7 +32,12 @@
           <md-divider></md-divider>
           <md-list-item ng-repeat="comment in main.commentArray track by $index">
             <img src="assets/images/all-the-things.jpg" class="md-avatar" />
-            <p  class="md-body-1">Card content</p>
+            <div class="md-list-item-text">
+              <h3 class-"md-headline">
+                Jill Douglas
+              </h3>
+              <p class="md-body-1">Card content</p>
+            </div>
             <md-divider></md-divider>
           </md-list-item>
           <div class="md-actions" layout="row" layout-align="end center">

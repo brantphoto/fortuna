@@ -100,6 +100,13 @@ h1 {
   }
 }
 
+.questions-page {
+  .question-card.md-whiteframe-2dp {
+    margin: 2em 6em;
+    max-height: 500px;
+  }
+}
+
 /**
  *  Do not remove the comment below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

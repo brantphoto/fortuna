@@ -1,5 +1,6 @@
 export function config ($logProvider,
-                        $mdThemingProvider) {
+                        $mdThemingProvider,
+                        $mdIconProvider) {
   'ngInject';
   // Enable log
   $logProvider.debugEnabled(true);
@@ -14,4 +15,6 @@ export function config ($logProvider,
       'default': '100'
     });
 
+    $mdIconProvider
+      .icon('menu', 'assets/images/menu.svg');
 }

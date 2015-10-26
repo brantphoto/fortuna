@@ -2,7 +2,7 @@
 
 import { config } from './index.config';
 import { routerConfig } from './index.route';
-import { htSubheaderWatch } from './htSubheaderWatch.directive';
+import { htToolbarScope } from './components/htToolbarScope/htToolbarScope.directive';
 import { MainController } from './main/main.controller';
 import { GithubContributorService } from '../app/components/githubContributor/githubContributor.service';
 import { WebDevTecService } from '../app/components/webDevTec/webDevTec.service';
@@ -14,4 +14,4 @@ angular.module('frontendz', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ngMessages',
   .service('githubContributor', GithubContributorService)
   .service('webDevTec', WebDevTecService)
   .controller('MainController', MainController)
-  .directive('htSubheaderWatch', htSubheaderWatch);
+  .directive('htToolbarScope', htToolbarScope);
