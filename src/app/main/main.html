@@ -1,26 +1,45 @@
-  <md-content flex layout="row" layout-padding>
-    <div layout="column" flex="70">
-      <h1 class="md-display-3" flex>
-        Today's Hottest Questions
-      </h1>
-      <md-content flex="50">
-        <md-toolbar class="md-primary md-whiteframe-2dp">
+  <md-content flex layout-padding>
+      <md-content ng-repeat="question in main.commentArray track by $index" class="md-whiteframe-2dp" style="margin: 2em 6em; max-height: 500px">
+        <md-toolbar class="md-accent md-whiteframe-2dp">
           <div class="md-toolbar-tools">
-            <h2 class="md-flex"> What is a javascript?</h2>
+            <h2 class="md-flex"> Javascript Equality </h2>
           </div>
         </md-toolbar>
-        <md-content class="md-whiteframe-2dp" layout-padding>
-          <h2>Card headline</h2>
-          <p>Card content</p>
-          <md-subheader class="md-primary">Yes</md-subheader>
-          <!--<p ng-repeat="comment in main.commentArray track by $index">Card content</p>-->
+        <md-list>
+          <md-list-item>
+            <img src="assets/images/all-the-things.jpg" class="md-avatar" />
+            <div class="md-list-item-text">
+              <h3>
+                Rachel Dell
+              </h3>
+              <p class="md-body-2"> Explain the differece between == and ===? This is extra long text in order to give the question body a little size. Here we go. How about this for another sentence.  </p>
+            </div>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-subheader class="md-accent" ht-subheader-watch>Yes</md-subheader>
+          <md-divider></md-divider>
+          <md-list-item ng-repeat="comment in main.commentArray track by $index">
+            <img src="assets/images/all-the-things.jpg" class="md-avatar" />
+            <div class="md-list-item-text">
+              <h3>
+                Ken Haley
+              </h3>
+              <p class="md-body-1">Card content</p>
+            </div>
+          <md-divider></md-divider>
+          </md-list-item>
+          <md-subheader class="md-primary">No</md-subheader>
+          <md-divider></md-divider>
+          <md-list-item ng-repeat="comment in main.commentArray track by $index">
+            <img src="assets/images/all-the-things.jpg" class="md-avatar" />
+            <p  class="md-body-1">Card content</p>
+            <md-divider></md-divider>
+          </md-list-item>
           <div class="md-actions" layout="row" layout-align="end center">
             <md-button class="md-primary">What does yes mean?</md-button>
-            <md-button class="md-warn">What does no mean?</md-button>
+            <md-button class="md-accent">What does no mean?</md-button>
           </div>
-        </md-content>
+        </md-list>
       </md-content>
-    </div>
 
   </md-content>
-

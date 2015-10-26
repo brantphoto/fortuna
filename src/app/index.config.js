@@ -7,7 +7,11 @@ export function config ($logProvider,
   $mdThemingProvider
     .theme('default')
     .primaryPalette('teal', {
-     'default': '600'
+     'default': '600',
+     'hue-1': 'A200'
+    })
+    .accentPalette('pink', {
+      'default': '100'
     });
 
 }
