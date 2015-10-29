@@ -20,6 +20,9 @@
 }
 
 $ht-light: #fff;
+$sm-screen: 600px;
+$md-screen: 960px;
+
 
 .material-icons {
   font-family: 'Material Icons';
@@ -102,8 +105,12 @@ h1 {
 
 .questions-page {
   .question-card.md-whiteframe-2dp {
-    margin: 2em 6em;
     max-height: 500px;
+    margin-bottom: 2em;
+
+    @media(min-width: $md-screen) {
+      margin: 2em 6em;
+    }
   }
 }
 

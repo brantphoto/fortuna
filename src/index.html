@@ -24,19 +24,33 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <md-sidenav layout="column" class="kmd-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+
+  <!-- body develop START -->
+
+  <!-- sidenav for app START -->
+  <md-sidenav md-theme="altTheme" layout="column"
+    class="kmd-sidenav-left md-whiteframe-z2"
+    md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
     <md-content layout="column" flex>
-      <p class="md-body-1">
+      <img src="/assets/images/small_logo.png" />
+      <p class="md-body-2">
         Welcome, this is my sample project. Please feel free to add a question and your own answer as to what yes or no means in that case.
       </p>
-      <p class="md-body-1">
+      <p class="md-body-2">
       Is it not a yes or no question? Then you can always take yes to mean you got an answer and no to mean there was a lack of knowledge.
       </p>
-
     </md-content>
   </md-sidenav>
+  <!-- sidenav for app START -->
+
+  <!-- main component START -->
+  <!-- TODO bad compent name, this is the main section but provides a
+       controller and API that all child directives can access. -->
   <ht-toolbar-scope style="height: 100%" layout="column" flex>
   </ht-toolbar-scope>
+  <!-- main compent END-->
+
+  <!-- body develop END -->
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
