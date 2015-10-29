@@ -7,7 +7,7 @@ import { MainController } from './main/main.controller';
 import { GithubContributorService } from '../app/components/githubContributor/githubContributor.service';
 import { WebDevTecService } from '../app/components/webDevTec/webDevTec.service';
 
-angular.module('frontendz', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'ngMaterial'])
+angular.module('frontendz', ['ngAnimate', 'ngTouch', 'ngSanitize', 'btford.markdown', 'ngMessages', 'ngAria', 'ui.router', 'ngMaterial'])
   .constant('moment', moment)
   .config(config)
   .config(routerConfig)
